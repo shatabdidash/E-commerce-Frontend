@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL PRODUCTS-THE CALM CHARM | ECOMMERCE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?
+    family=DynaPuff:wght@400;600&family=Poppins:ital,
+    wght@0,100;0,200;0,400;0,600;1,900&
+    family=Roboto:ital,wght@1,100&display=swap" 
+    rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Content</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="shoppingcart.html"><img src="images/cart.png"width="30px" height="30px"></a>
+            
+        </div>
+    </div>
+
+<!---------single product details-------->
+<div class="small-container single-pdoduct" >
+    <div class="row">
+        <div class="col-2">
+            <img src="images/gallery-2.png"width="100%" id="productImg">
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="images/gallery-2.png"width="100%"class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-1.png"width="100%"class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/gallery-3.png"width="100%"class="SmallImg">
+                </div>
+                <div class="small-img-col">
+                    <img src="images/galley-4.png"width="100%"class="SmallImg">
+                </div>
+            </div>
+        </div>
+        <div class="col-2">
+            <p>Home/Dress suit</p>
+            <h1>Peach Pearl Anarkali suit</h1>
+            <h4>Rs.4999.00</h4>
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+            <input type="number" value="1">
+            <a href="shoppingcart.html" class="btn">Add To Cart</a>
+            <h3>Product Details</h3>
+            <br>
+            <p>Our traditional attire has taken hundreds 
+                of years, generations of fashion designers 
+                and tens of thousands of iterations to make a mark on the world.
+                 And we should be proud of it!</p>
+            
+        </div>
+    </div>
+</div>
+<!------title------->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+
+</div>
+<!------products------>
+<div class="small-container">
+    <div class="row">
+        <div class="col-4">
+            <img src="images/relatedimage1.png">
+            <h4>Kurti With Sarara And Dupatta </h4>
+            <p>Rs.499.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/relatedimage2.png">
+            <h4>Kurti With Palaazo</h4>
+            <p>Rs.2999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/relatedimage3.png">
+            <h4>Kurti With Straight Pant</h4>
+            <p>Rs.799.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/relatedimage4.png">
+            <h4>Salwar Suit</h4>
+            <p>Rs.699.00</p>
+        </div>
+    </div>
+</div>    
+<!-------footer------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>DOWNLOAD THIS APP</h3>
+                <p>Download app for android and ios mobile phone.</p>
+                <div class="app-logo">
+                    <img src="images/appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="images/logo.png">
+                <p>Shopping is a woman thing. 
+                    Lets shop together.
+                    .</p>   
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affilitate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Discord</li>
+                </ul>
+            </div>
+        </div>
+        <p class="copyright"> copyright 2022 - Shatabdi Dash</p>
+    </div>
+</div>
+<!------js for product galary------>
+<script>
+    var productImg = document.getElementById("productImg");
+    var SmallImg = document.getElementsByClassName("SmallImg");
+    SmallImg[0].onclick =function()
+    {
+        productImg.src=SmallImg[0].src;
+    }
+    SmallImg[1].onclick =function()
+    {
+        productImg.src=SmallImg[1].src;
+    }
+    SmallImg[2].onclick =function()
+    {
+        productImg.src=SmallImg[2].src;
+    }
+    SmallImg[3].onclick =function()
+    {
+        productImg.src=SmallImg[3].src;
+    }
+</script>
+</body>
+</html>
